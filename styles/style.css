@@ -234,6 +234,207 @@ h1{
     font-weight: 800;
     margin: 9px 0;
 }
+.container-box4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px;
+}
+.box4-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+}
+.box4-content p{
+    width: 50%;
+    text-align: center;
+}
+.box4-container-offerCard{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box4-container-offerCard .offerCard{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.offerCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.offerCard .ofcardTwo{
+    left: 3rem;
+}
+.offerCard .price-details{
+    position: absolute;
+    top: 30px;
+    right: 3rem;
+    width: 450px;
+    height: 250px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+.price-details ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    color: #5A5A5D;
+    font-size: 15px;
+}
+.price-details ul i{color: #FF5400;}
+.price-details h1{
+    color-scheme: #131313;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+.price-details span{
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+}
+.container-box4 button{
+    width: 180px;
+    height: 45px;
+    background: #FF5400;
+    border-radius: 8px;
+    border: none;
+    margin: 30px 0;
+    cursor: pointer;
+}
+.container-box5{
+    padding: 0 100px;
+    margin: 50px 0;
+    display: flex;
+    gap: 90px;
+}
+.sec1-content p{
+    margin: 10px 0 20px;
+}
+.sec1-content ul li{
+    font-weight: 700;
+    margin: 12px;
+}
+.sec1-player{
+    position: relative;
+    width: 100%;
+}
+.sec1-player h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50%;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+.sec1-player .controler{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 4%;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.controler span{
+    margin-right: 15px;
+}
+.sec1-player div .progress{
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+    height: 2px;
+    background: #6b5f5f;
+    border-radius: 10px;
+}
+.sec1-player div .progress::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background-color: #fff;
+}
+.container-box6{
+    padding: 0 100px;
+    margin: 50px 0;
+    display: flex;
+    gap: 90px;
+}
+.container-box6 .sec2-content{
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 2px rgba(19, 19, 24, 0.21);
+}
+.sec2-content input,button{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid rgba(19, 19, 24, 0.70);
+    margin: 10px 0;
+}
+.sec2-content button{
+    background: #FF5400;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+}
+.container-box6 .sec2-img{
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+.sec2-img img{ width: 100%;}
+.sec2-img button{
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    width: 280px;
+    height: 100px;
+    background: #FF5400;
+    rotate: -20deg;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+footer{
+    position: relative;
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+    margin: 30px 0;
+}
+footer h1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer h1 span{ color: #FF5400;}
+footer p{
+    width: 50%;
+    text-align: center;
+}
+footer .social-icons{
+    display: flex;
+    gap: 26px;
+}
 /* mobile device */
 @media screen and (max-width: 600px){
     header{
@@ -248,7 +449,7 @@ h1{
     }
     .banner-container{
         width: 100%;
-        height: 480px;
+        height: 550px;
     }
     .banner-container img{
         width: 100%;
@@ -257,6 +458,9 @@ h1{
     }
     h1{
         font-size: 22px;
+    }
+    .banner-content h1{
+        font-size: 1.5em;
     }
     .banner-content p{
         width: 90%;
@@ -297,6 +501,61 @@ h1{
     .box3-container-card div{
         width: 87%;
     }
+    .container-box4{
+        padding: 0 10px;
+    }
+    .box4-container-offerCard .offerCard{
+        height: 600px;
+    }
+    .offerCard img{
+        height: 100%;
+    }
+    .offerCard .price-details{
+        position: absolute;
+        left: 20px;
+        top: 13rem;
+        width: 280px;
+        height: 320px;
+        padding: 20px;
+    }
+    .container-box5{
+        padding: 0 10px;
+        flex-direction: column;
+    }
+    .sec1-player{
+        width: 100%;
+    }
+    .sec1-player img{
+        width: 100%;
+    }
+    .container-box6{
+        padding: 0 10px;
+        margin: 50px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container-box6 .sec2-content{
+        width: 18em;
+        height: 300px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 8px 2px rgba(19, 19, 24, 0.21);
+    }
+    .container-box6 .sec2-img{
+        width: 22rem;
+    }
+    footer{
+        position: relative;
+        background: rgba(19, 19, 24, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        margin: 30px 0;
+    }
+    footer p{width: 100%;}
 }
 /* medium device */
 @media screen and (min-width: 600px) and (max-width:992px){
@@ -346,6 +605,12 @@ h1{
     .box2-img div:nth-child(2){ width: 100%; }
     .box2-img div:nth-child(4){ width: 100%; }
     .box2-img div:nth-child(7){ width: 100%; }
+    .container-box3{
+        padding: 0 10px;
+    }
+    .container-box4{
+        padding: 0 10px;
+    }
     .box3-container-card{
         display: flex;
         flex-direction: column;
@@ -354,4 +619,51 @@ h1{
     .box3-container-card div{
         width: 87%;
     }
+    .offerCard{
+        height: 540px;
+    }
+    .offerCard .price-details{
+        top: 20px;
+        right: 20px;
+        height: 250px;
+        padding: 20px;
+    }
+    .container-box5{
+        padding: 0 10px;
+        flex-direction: column;
+    }
+    .sec1-player{
+        width: 100%;
+    }
+    .sec1-player img{
+        width: 100%;
+    }
+    .container-box6{
+        padding: 0 10px;
+        margin: 50px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container-box6 .sec2-content{
+        width: 90%;
+        height: 300px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 8px 2px rgba(19, 19, 24, 0.21);
+    }
+    .container-box6 .sec2-img{
+        width: 100%;
+    }
+    footer{
+        position: relative;
+        background: rgba(19, 19, 24, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        margin: 30px 0;
+    }
+    footer p{width: 100%;}
 }
